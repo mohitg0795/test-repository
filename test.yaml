@@ -1,0 +1,33 @@
+pipeline:
+  name: test-10feb
+  identifier: test10feb
+  projectIdentifier: test_mohit_git_sync_to_gitx
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: test
+        identifier: test
+        description: ""
+        type: Approval
+        spec:
+          execution:
+            steps:
+              - step:
+                  name: test
+                  identifier: test
+                  type: HarnessApproval
+                  timeout: 1d
+                  spec:
+                    approvalMessage: |-
+                      Please review the following information
+                      and approve the pipeline progression
+                    includePipelineExecutionHistory: true
+                    approvers:
+                      minimumCount: 1
+                      disallowPipelineExecutor: false
+                      userGroups:
+                        - account.testSyncRbac
+                    isAutoRejectEnabled: false
+                    approverInputs: []
+        tags: {}

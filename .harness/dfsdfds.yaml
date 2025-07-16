@@ -6,7 +6,7 @@ pipeline:
   tags: {}
   stages:
     - stage:
-        name: testdfddfd
+        name: testdffd
         identifier: test
         description: ""
         type: Approval

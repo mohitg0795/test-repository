@@ -6,7 +6,7 @@ pipeline:
   tags: {}
   stages:
     - stage:
-        name: testing123456789
+        name: testingtesting
         identifier: tes
         description: ""
         type: Custom

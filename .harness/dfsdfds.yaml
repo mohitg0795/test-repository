@@ -3,7 +3,6 @@ pipeline:
   identifier: dfsdfds
   projectIdentifier: Default_Project_1667996877169
   orgIdentifier: default
-  tags: {}
   stages:
     - stage:
         name: testdfssdfdsdd

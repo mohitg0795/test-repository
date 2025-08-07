@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_test_repository_1754562478615-pr-trigger-input-set
+  identifier: Build_test_repository_1754562478615prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: Jira
+  pipeline:
+    identifier: Build_test_repository_1754562478615
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>

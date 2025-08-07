@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_test_repository_1754562478615-push-trigger-input-set
+  identifier: Build_test_repository_1754562478615pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: Jira
+  pipeline:
+    identifier: Build_test_repository_1754562478615
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>

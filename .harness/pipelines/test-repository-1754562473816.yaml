@@ -31,3 +31,5 @@ pipeline:
         connectorRef: account.mohit_personal_github
         repoName: test-repository
         build: <+input>
+        sparseCheckout: []
+        persistCredentials: true

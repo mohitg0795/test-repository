@@ -29,7 +29,7 @@ pipeline:
     ci:
       codebase:
         connectorRef: account.mohit_personal_github
-        repoName: test
+        repoName: test-repository
         build: <+input>
         sparseCheckout: []
         persistCredentials: <+input>

@@ -36,4 +36,4 @@ pipeline:
       type: String
       description: ""
       required: false
-      value: "123"
+      value: <+input>.default(123)

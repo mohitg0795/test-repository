@@ -1,0 +1,33 @@
+pipeline:
+  name: testpipeline10nov
+  identifier: testpipeline10nov1
+  tags: {}
+  projectIdentifier: mohit_test_25_aug
+  orgIdentifier: AAAsunnyGitExp
+  stages:
+    - stage:
+        name: test
+        identifier: test
+        description: ""
+        type: Approval
+        spec:
+          execution:
+            steps:
+              - step:
+                  name: test
+                  identifier: test
+                  type: HarnessApproval
+                  timeout: 10d
+                  spec:
+                    approvalMessage: |-
+                      Please review the following information
+                      and approve the pipeline progression
+                    includePipelineExecutionHistory: true
+                    approvers:
+                      minimumCount: 1
+                      disallowPipelineExecutor: false
+                      userGroups:
+                        - account.jbsdjfhbdhsjbf
+                    isAutoRejectEnabled: false
+                    approverInputs: []
+        tags: {}

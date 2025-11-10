@@ -17,7 +17,7 @@ pipeline:
                   name: test
                   identifier: test
                   type: HarnessApproval
-                  timeout: 1d
+                  timeout: 10d
                   spec:
                     approvalMessage: |-
                       Please review the following information

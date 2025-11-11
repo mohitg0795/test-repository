@@ -1,0 +1,36 @@
+pipeline:
+  name: testpipelinetesttemplate
+  identifier: testpipelinetesttemplate
+  tags: {}
+  template:
+    templateRef: account.testpipelinetemplate
+    versionLabel: v1
+    gitBranch: main-16jul
+    templateInputs:
+      stages:
+        - stage:
+            identifier: test
+            type: Deployment
+            spec:
+              environment:
+                environmentRef: <+input>
+                environmentInputs: <+input>
+                serviceOverrideInputs: <+input>
+                infrastructureDefinitions: <+input>
+              service:
+                serviceRef: <+input>
+                serviceInputs: <+input>
+              execution:
+                steps:
+                  - step:
+                      identifier: test123
+                      template:
+                        templateInputs:
+                          type: K8sDelete
+                          spec:
+                            deleteResources:
+                              type: ResourceName
+                              spec:
+                                resourceNames: <+input>
+  projectIdentifier: mohit_test_25_aug
+  orgIdentifier: AAAsunnyGitExp

@@ -1,5 +1,5 @@
 pipeline:
-  name: test2dec123
+  name: test2dec123456
   identifier: test2dec
   projectIdentifier: test_mohit_git_sync_to_gitx
   orgIdentifier: default

@@ -1,0 +1,33 @@
+pipeline:
+  name: test2dec
+  identifier: test2dec
+  projectIdentifier: test_mohit_git_sync_to_gitx
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: test
+        identifier: test
+        description: ""
+        type: Approval
+        spec:
+          execution:
+            steps:
+              - step:
+                  name: tset
+                  identifier: tset
+                  type: HarnessApproval
+                  timeout: 1d
+                  spec:
+                    approvalMessage: |-
+                      Please review the following information
+                      and approve the pipeline progression
+                    includePipelineExecutionHistory: true
+                    approvers:
+                      minimumCount: 1
+                      disallowPipelineExecutor: false
+                      userGroups:
+                        - account.AccountAdmin
+                    isAutoRejectEnabled: false
+                    approverInputs: []
+        tags: {}

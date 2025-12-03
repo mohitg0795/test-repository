@@ -1,0 +1,15 @@
+template:
+  name: testmohit
+  identifier: testmohit
+  versionLabel: v1
+  type: Step
+  tags: {}
+  spec:
+    timeout: 10m
+    type: K8sDelete
+    spec:
+      deleteResources:
+        type: ResourceName
+        spec:
+          resourceNames:
+            - "123"

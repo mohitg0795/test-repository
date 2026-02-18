@@ -1,0 +1,5 @@
+service:
+  name: testservice
+  identifier: testservice
+  orgIdentifier: default
+  projectIdentifier: test_mohit_git_sync_to_gitx

@@ -1,0 +1,17 @@
+template:
+  name: test 26 feb
+  identifier: test_26_feb
+  versionLabel: v1
+  type: Step
+  projectIdentifier: test_mohit_git_sync_to_gitx
+  orgIdentifier: default
+  tags: {}
+  spec:
+    timeout: 10m
+    type: K8sDelete
+    spec:
+      deleteResources:
+        type: ResourceName
+        spec:
+          resourceNames:
+            - test

@@ -1,5 +1,5 @@
 pipeline:
-  name: test-10feb1211212
+  name: test-10feb1211212dfdf
   identifier: test10feb
   projectIdentifier: test_mohit_git_sync_to_gitx
   orgIdentifier: default

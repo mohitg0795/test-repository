@@ -1,7 +1,5 @@
 package pipeline
 
-# Deny pipelines that don't have an approval step
-# NOTE: Try removing the HarnessApproval step from your inpt to see the policy fail
 deny[msg] {
 	# Find all stages that are Deployments ...
 	input.pipeline.stages[i].stage.type == "Deployment"

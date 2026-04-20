@@ -4,7 +4,7 @@ pipeline:
   projectIdentifier: Default_Project_1667996877169
   stages:
     - stage:
-        name: testdfssdfdsdd
+        name: test123
         identifier: test
         type: Approval
         spec:

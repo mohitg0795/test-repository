@@ -1,12 +1,7 @@
 pipeline:
   name: test april 30
   identifier: test_april_30
-  projectIdentifier: test_mohit_git_sync_to_gitx
-  orgIdentifier: default
-  tags: {}
-  stages:
-    - stage:
-        name: test
+  projectIdentifier: tes
         identifier: test
         description: ""
         type: Approval

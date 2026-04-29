@@ -2,9 +2,7 @@ pipeline:
   name: test april 30
   identifier: test_april_30
   projectIdentifier: tes
-        identifier: test
-        description: ""
-        type: Approval
+        identifier: te
         spec:
           execution:
             steps:

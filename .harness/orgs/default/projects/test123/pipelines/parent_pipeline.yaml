@@ -1,0 +1,42 @@
+pipeline:
+  name: parent pipeline
+  identifier: parent_pipeline
+  projectIdentifier: test123
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: test123
+        identifier: test123
+        description: ""
+        type: Pipeline
+        spec:
+          org: default
+          pipeline: child_pipeline
+          project: test123
+          inputs:
+            identifier: child_pipeline
+            template:
+              templateInputs:
+                stages:
+                  - stage:
+                      identifier: test
+                      template:
+                        templateInputs:
+                          type: Deployment
+                          spec:
+                            execution:
+                              steps:
+                                - step:
+                                    identifier: K8sDelete_1
+                                    type: K8sDelete
+                                    spec:
+                                      deleteResources:
+                                        type: ResourceName
+                                        spec:
+                                          resourceNames: <+input>
+                            environment:
+                              environmentRef: <+input>
+                              environmentInputs: <+input>
+                              serviceOverrideInputs: <+input>
+                              infrastructureDefinitions: <+input>

@@ -2,7 +2,7 @@ pipeline:
   name: test
   identifier: test
   projectIdentifier: test_project_2
-  orgIdentifier: default
+  orgIdentifier: adi_org
   tags: {}
   stages:
     - stage:
@@ -20,7 +20,7 @@ pipeline:
                   timeout: 1d
                   spec:
                     approvalMessage: |-
-                      Please review the following information
+                      Please review the following information sdaf
                       and approve the pipeline progression sdf
                     includePipelineExecutionHistory: true
                     approvers:

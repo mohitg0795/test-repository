@@ -1,0 +1,15 @@
+template:
+  name: test26feb account
+  type: Step
+  tags: {}
+  spec:
+    timeout: 1h 41m
+    type: K8sDelete
+    spec:
+      deleteResources:
+        type: ResourceName
+        spec:
+          resourceNames:
+            - test
+  identifier: test26feb_account
+  versionLabel: v1

@@ -5,6 +5,7 @@ pipeline:
   orgIdentifier: default
   tags:
     main-16-jul: ""
+    extra: ""
   stages:
     - stage:
         name: test

@@ -1,12 +1,13 @@
 pipeline:
-  name: test pipeline trigger
-  identifier: test_pipeline_trigger
-  projectIdentifier: test123
+  name: test pipeline tags
+  identifier: test_pipeline_tags
+  projectIdentifier: test_mohit_git_sync_to_gitx
   orgIdentifier: default
-  tags: {}
+  tags:
+    main-16-jul: ""
   stages:
     - stage:
-        name: test123
+        name: test
         identifier: test
         description: ""
         type: Approval
@@ -26,7 +27,8 @@ pipeline:
                     approvers:
                       minimumCount: 1
                       disallowPipelineExecutor: false
-                      userGroups: <+input>
+                      userGroups:
+                        - account.AccountAdmin
                     isAutoRejectEnabled: false
                     approverInputs: []
         tags: {}

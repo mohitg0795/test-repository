@@ -1,0 +1,32 @@
+pipeline:
+  name: pipeline parent 29 jul
+  identifier: pipeline_parent_29_jul
+  tags: {}
+  projectIdentifier: mohit_test_25_aug
+  orgIdentifier: AAAsunnyGitExp
+  stages:
+    - stage:
+        name: test
+        identifier: test
+        description: ""
+        type: Pipeline
+        spec:
+          org: AAAsunnyGitExp
+          pipeline: test_child_pipeline_29_jul
+          project: mohit_test_25_aug
+          inputs:
+            identifier: test_child_pipeline_29_jul
+            template:
+              templateInputs:
+                stages:
+                  - stage:
+                      identifier: test
+                      template:
+                        templateInputs:
+                          type: Deployment
+                          spec:
+                            environment:
+                              environmentRef: <+input>
+                              environmentInputs: <+input>
+                              serviceOverrideInputs: <+input>
+                              infrastructureDefinitions: <+input>
